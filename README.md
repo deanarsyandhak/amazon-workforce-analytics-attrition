@@ -52,9 +52,8 @@ Amazon has responded with pay increases, upskilling investments, and localized H
 <img width="567" height="550" alt="image" src="https://github.com/user-attachments/assets/fcee1efc-ace4-4b5d-a6ee-b145d35f8033" />
 
 - Burnout-related physical and mental strain emerged as the dominant dissatisfaction theme across both Glassdoor and YouTube discussions, indicating significant operational sustainability and attrition risk among frontline workers.
-- Hidden operational strain signals frequently appeared within reviews initially classified as neutral or positive, suggesting that standard sentiment analysis alone underestimated dissatisfaction severity.
 - Employees used YouTube as an external public platform to express workplace frustrations, suggesting potential gaps in psychological safety and internal feedback visibility.
-- On Glassdoor, reviews consistently cite favoritism, nepotism, and biased promotions as structural management failures rather than individual incidents, suggesting the problem is systemic rather than isolated to specific managers.
+- Hidden operational strain signals frequently appeared within reviews initially classified as neutral or positive, suggesting that standard sentiment analysis alone underestimated dissatisfaction severity.
 
 ## Workforce Prioritization
 The analysis idnetified Tier 1 Associates as the highest-priority intervention segment.
