@@ -1,16 +1,14 @@
 # Amazon Frontline Attrition Diagnostic & Pilot Intervention
-End-to-end workforce analytics project analyzing frontline attrition drivers and translating employee feedback into operational diagnosis and pilot intervention design
+End-to-end workforce business analytics project analyzing frontline attrition drivers and translating employee feedback into operational diagnosis and pilot intervention design
 
 ## Executive Summary
-This project analyzes frontline employee feedback from Amazon fulfillment centers across two platforms — Glassdoor and YouTube — to identify the primary operational drivers of dissatisfaction and attrition. Using combined sentiment analysis, keyword-based thematic tagging, and adjusted negative signal detection, three core themes were surfaced: burnout and physical strain, scheduling pressure, and management bias.
-Burnout emerged as the most severe theme, with approximately 95% adjusted negative sentiment and near-zero neutral presence — indicating a threshold experience rather than gradual dissatisfaction. Analysis further revealed a psychological safety gap, with employees turning to YouTube to process workplace experiences rather than internal channels, suggesting that formal feedback mechanisms are failing to capture primary attrition signals.
-Based on these findings, a 14-day pilot is proposed: a standardized task rotation system for Tier 1 Associates in a single fulfillment zone, using predefined exposure thresholds and a lightweight tracking metric — Task Exposure Balance (TEB) — to make biomechanical strain operationally visible. The intervention is zero additional headcount cost, leverages existing Learning Ambassadors for floor-level compliance, and is designed to prove workload sustainability without disrupting productivity targets.
+This project analyzes frontline employee feedback from Amazon fulfillment centers across two platforms (Glassdoor and YouTube) to identify the primary operational drivers of dissatisfaction and attrition. Using combined sentiment analysis, keyword-based thematic tagging, and adjusted negative signal detection, three core themes surfaced: burnout and physical strain, scheduling pressure, and management bias. Burnout emerged as the most severe theme, with approximately 95% adjusted negative sentiment and near-zero neutral presence. This indicates a threshold experience rather than gradual dissatisfaction. Analysis further revealed a psychological safety gap, with employees turning to YouTube to process workplace experiences rather than internal channels, suggesting that formal feedback mechanisms are failing to capture primary attrition signals. Based on these findings, a 14-day pilot is proposed: a standardized task rotation system for Tier 1 Associates in a single fulfillment zone, using predefined exposure thresholds and a lightweight tracking metric, Task Exposure Balance (TEB), to make biomechanical strain operationally visible.
 
 ## Key Skills
 ### Technical
 - Python
 - Pandas
-- Matplotlib / Seaborn
+- Matplotlib/Seaborn
 - TextBlob
 - NLTK
 - Google Colab
@@ -23,9 +21,14 @@ Based on these findings, a 14-day pilot is proposed: a standardized task rotatio
 - Pilot Intervention Design
 
 ## Business Problem
-Amazon's fulfillment centers operate on a high-churn labor model designed to sustain productivity through continuous workforce replacement rather than retention. This model produces a 150% annual turnover rate — double the industry average — with 70% of new hires exiting within 90 days, costing an estimated $8 billion annually in recruitment, onboarding, and lost productivity.
-The model is operationalized through strict performance monitoring, automated warning systems, and mandatory overtime structures that prioritize throughput over workforce sustainability. While effective at short-term cost control, this approach has surfaced three compounding risks: higher-than-sector injury rates linked to repetitive high-intensity tasks, saturation of local labor markets in key regions reducing the available replacement workforce, and increasing regulatory and public scrutiny from labor researchers and advocacy groups.
-Amazon has responded with pay increases, upskilling investments, and localized HR flexibility — measures that address symptoms rather than the underlying model. This project examines what frontline employee feedback, drawn from Glassdoor and YouTube, reveals about the specific operational drivers of dissatisfaction and attrition, and whether a targeted, low-cost intervention can reduce strain at the point where it is most acute.
+Amazon's fulfillment centers operate on a high-churn labor model designed to sustain productivity through continuous workforce replacement rather than retention. Although it has its upsides, this model produces a 150% annual turnover rate, which is double the industry average. This is evident as 70% of new hires exit within 90 days, costing an estimated $8 billion annually in recruitment, onboarding, and lost productivity. Amazon maintains this model through strict performance monitoring (e.g. time-off-task), automated warning systems, and mandatory overtime scheduling structures.
+
+While this is effective in short-term cost control, this approach has surfaced three compounding risks:
+* Higher-than-sector injury rates linked to repetitive high-intensity tasks
+* Saturation of local labour markets in key regions which reduces the available replacement workforce
+* Increasing regulatory and public scrutiny from labour researchers and advocacy groups
+
+In response to this Amazon has committed measures such as increased pay, invested in upskilling programs, and added localized HR flexibility. Nevertheless, all of these measures address symptoms rather than the underlying model. This project examines what frontline feedback reveals about the specific operational drivers of dissatisfaction and attrition.
 
 ## Project Objectives
 - Identify recurring operational dissatisfaction themes from employee feedback
@@ -39,7 +42,7 @@ Amazon has responded with pay increases, upskilling investments, and localized H
 - Public YouTube videos containing discussions and worker experiences
 
 ## Analytical Workflow
-1. Data preparation and text preprocessing  
+1. Data cleaning and text preprocessing  
 2. Exploratory text analysis  
 3. Sentiment analysis and hidden strain signal detection  
 4. Cross-platform comparison  
@@ -51,19 +54,25 @@ Amazon has responded with pay increases, upskilling investments, and localized H
 ## Key Insights
 <img width="567" height="550" alt="image" src="https://github.com/user-attachments/assets/fcee1efc-ace4-4b5d-a6ee-b145d35f8033" />
 
-- Burnout-related physical and mental strain emerged as the dominant dissatisfaction theme across both Glassdoor and YouTube discussions, indicating significant operational sustainability and attrition risk among frontline workers.
-- Employees used YouTube as an external public platform to express workplace frustrations, suggesting potential gaps in psychological safety and internal feedback visibility.
-- Hidden operational strain signals frequently appeared within reviews initially classified as neutral or positive, suggesting that standard sentiment analysis alone underestimated dissatisfaction severity.
+- Physical and mental burnout was the most frequent complaint and it functioned as a threshold experience as it had ~95% adjusted negative sentiment with near-zero neutral. Associates either haven't hit it yet or are already gone. Scheduling pressure and management bias were identified as its two compounding inputs, making burnout the convergence point of systemic operational failure.
+- Employees are venting to YouTube rather than internal channels. This suggests as a behavioral signal that formal feedback mechanisms are undercounting the true scale of dissatisfaction and attrition risk.
+- Standard sentiment analysis misclassified a significant portion of operational strain language as neutral. A keyword-based reclassification approach was developed to surface hidden negative signals, revealing burnout severity substantially higher than surface scores suggested.
+
 
 ## Workforce Prioritization
-The analysis idnetified Tier 1 Associates as the highest-priority intervention segment.
+The analysis identified Tier 1 Associates as the highest-priority intervention segment.
 <img width="681" height="562" alt="image" src="https://github.com/user-attachments/assets/eb1b8a73-6e3a-42c3-a0a9-fa865b72100f" />
 
 ## Pilot Recommendation
-The proposed intervention introduces a standardized task rotation process supported by lightweight strain-monitoring mechanisms to improve workload sustainability and reduce burnout-related operational risk among **Tier 1 Associates**.
+The proposed pilot introduces a standardized task rotation process for Tier 1 Associates within a single high-strain fulfillment zone, targeting a 14-day sprint with 10–20 associates. Associates rotate between high-strain and lower-strain tasks on a fixed cadence, removing task assignment from managerial discretion and embedding it as an operational standard. Compliance is maintained through existing Learning Ambassadors, requiring approximately 90 minutes of onboarding (zero additional headcount cost). Success is measured through two indicators: Task Exposure Balance (TEB), targeting less than 5% over-exposure, and late-shift error rate, targeting 15% quality improvement over the pilot window.
 
 ## Repository Structure
 
 ```text
 README.md
-amazon_attrition_analysis.ipynb
+amazon_frontline_attrition_analysis.ipynb
+```
+
+## Notes
+
+Due to source platform and privacy considerations, the original datasets used in this project are not included in the repository.
